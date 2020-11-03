@@ -33,7 +33,7 @@ def turn(board)
 end
 
 def position_taken?(board, index)
-  board[input] != " "
+  board[index] != " "
 end
 
 def move(board, input, current_player = "X")
