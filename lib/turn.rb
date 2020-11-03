@@ -13,3 +13,22 @@ def valid_move?(board, position)
     end
   end
 end
+
+def turn(board)
+  puts "Please enter 1-9:"
+  input = gets.strip
+  if valid_move?(board, input)
+    move(board, input)
+  else
+    turn(board)
+  end
+  display_board(board)
+end
+
+def position_taken?(board, location)
+  board[location] != " "
+end
+
+def move(board, location, current_player = "X")
+  board[location.to_i-1] = current_player
+end
