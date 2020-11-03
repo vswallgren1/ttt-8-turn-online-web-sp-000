@@ -32,10 +32,10 @@ def turn(board)
   display_board(board)
 end
 
-def position_taken?(board, location)
-  board[location] != " "
+def position_taken?(board, index)
+  board[index] != " "
 end
 
-def move(board, location, current_player = "X")
-  board[location.to_i-1] = current_player
+def move(board, index, current_player = "X")
+  board[index.to_i-1] = current_player
 end
