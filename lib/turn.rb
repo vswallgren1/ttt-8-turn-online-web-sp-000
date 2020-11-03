@@ -32,7 +32,7 @@ def turn(board)
   end
 end
 
-def position_taken?(board, input)
+def position_taken?(board, index)
   board[input] != " "
 end
 
