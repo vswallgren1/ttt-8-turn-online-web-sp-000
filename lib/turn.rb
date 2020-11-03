@@ -35,6 +35,6 @@ def position_taken?(board, location)
   board[index] != " "
 end
 
-def move(board, index, current_player = "X")
-  board[index.to_i-1] = current_player
+def move(board, location, current_player = "X")
+  board[location.to_i-1] = current_player
 end
