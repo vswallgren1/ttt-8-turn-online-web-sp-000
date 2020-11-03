@@ -11,7 +11,7 @@ def input_to_index(user_input)
 end
 
 def valid_move?(board, index)
-  if position.to_i.between?(1,9)
+  if position.to_i.between?(0,8)
     if !position_taken?(board, input.to_i-1)
       return true
     elsif board[index] == "X" || "O"
