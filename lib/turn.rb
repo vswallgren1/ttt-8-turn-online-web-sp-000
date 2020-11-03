@@ -12,7 +12,7 @@ end
 
 def valid_move?(board, index)
   if position.to_i.between?(0,8)
-    if !position_taken?(board, input.to_i-1)
+    if !position_taken?(board, index)
       return true
     elsif board[index] == "X" || "O"
       return false
